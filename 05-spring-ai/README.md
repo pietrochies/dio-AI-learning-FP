@@ -83,3 +83,6 @@ Run the application and tests:
 
 - Educational final project focused on AI plus architectural discipline.
 - External provider integration tests may require active credentials.
+
+
+//comentario 
