@@ -8,17 +8,17 @@ The track starts with architecture foundations and progressively moves through w
 
 ## Modules
 
-- [`00-domain-driven-design`](00-domain-driven-design/README.md)  
+- [`00-domain-driven-design`](00-domain-driven-design/README.md)
   DDD foundations with a catalog domain and no web layer.
-- [`01-spring-web`](01-spring-web/README.md)  
+- [`01-spring-web`](01-spring-web/README.md)
   REST API design with Spring Web and API documentation with Spring REST Docs.
-- [`02-spring-data`](02-spring-data/README.md)  
+- [`02-spring-data`](02-spring-data/README.md)
   Data access in a multi-context application using MySQL, MongoDB, Redis, and PostgreSQL.
-- [`03-spring-security`](03-spring-security/README.md)  
+- [`03-spring-security`](03-spring-security/README.md)
   Authentication and authorization with Spring Security in a proposal management API.
-- [`04-spring-cloud-openfeign`](04-spring-cloud-openfeign/README.md)  
+- [`04-spring-cloud-openfeign`](04-spring-cloud-openfeign/README.md)
   External service integration (KYC/AML) using Spring Cloud OpenFeign and resilience patterns.
-- [`05-spring-ai`](05-spring-ai/README.md)  
+- [`05-spring-ai`](05-spring-ai/README.md)
   Final project using Spring AI for speech-to-text, tool calling, and text-to-speech.
 
 ## Recommended Study Order
@@ -133,6 +133,62 @@ cd 01-spring-web
 ./gradlew test
 ```
 
-For module-specific details, always check each module README from the links above.  
+For module-specific details, always check each module README from the links above.
+
+## Parte nova
+
+## Sobre o projeto
+
+Este projeto é uma trilha de estudos em Spring Boot. O módulo final é uma API de controle financeiro que registra e consulta transações.
+
+### Como executar?
+
+É necessário ter Java 25, Docker e uma chave da OpenAI configurada:
+
+```bash
+export OPENAI_API_KEY="sua_chave_aqui" (pegar chave no site da OpenAI)
+cd 05-spring-ai
+docker compose up -d
+./gradlew bootRun
+```
+
+### Melhoria implementada
+
+Foi adicionada validação de transações para:
+
+- impedir valores menores ou iguais a zero
+- impedir descrições vazias
+- impedir categorias nulas ou inválidas.
+
+### Tecnologias utilizadas
+
+- Java 25;
+- Spring Boot;
+- Spring AI;
+- Spring Data JPA;
+- MySQL;
+- Docker Compose;
+- JUnit.
+- Ferramentes de auxilio AI( chatgpt e copilot)
+
+### Como testar?
+
+Para testar as validações do fluxo principal:
+
+```bash
+cd 05-spring-ai
+./gradlew test --tests "dio.budgeting.domain.TransactionTest"
+```
+
+Para executar todos os testes:
+
+```bash
+./gradlew test
+```
+
+## Aprendizados
+
+O projeto apesar de estar configurado para java25 estava tentanto usar o 11, ocasionando erros,
+Em grandes projetos como esse, é importante ter varios readme, como aqui, e manter muita documentação.]
 
 
