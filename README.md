@@ -1,5 +1,11 @@
 # DIO Spring Boot Learning Track
 
+Este projeto foi desenvolvido originalmente pela DIO como parte da trilha de estudos em java e AI.
+
+A partir do projeto-base, realizei uma implementação incremental como parte do desafio do bootcamp, adicionando melhorias e adaptações próprias com o objetivo de aprofundar os conhecimentos em Spring Boot, Spring AI, validações, persistência de dados e testes automatizados.
+
+A documentação original do projeto foi mantida abaixo para preservar as informações e explicações fornecidas durante a trilha. As alterações e funcionalidades adicionadas por mim estão documentadas na seção Evolução do projeto.
+
 This repository contains a DIO Spring Boot learning track organized as incremental modules.
 
 The track starts with architecture foundations and progressively moves through web APIs, data access, security, service integration, and AI-enabled workflows.
@@ -135,7 +141,7 @@ cd 01-spring-web
 
 For module-specific details, always check each module README from the links above.
 
-## Parte nova
+## Evolução do projeto
 
 ## Sobre o projeto
 
@@ -169,7 +175,7 @@ Foi adicionada validação de transações para:
 - MySQL;
 - Docker Compose;
 - JUnit.
-- Ferramentes de auxilio AI( chatgpt e copilot)
+- Ferramentas de apoio ao desenvolvimento: ChatGPT e GitHub Copilot.
 
 ### Como testar?
 
@@ -187,8 +193,8 @@ Para executar todos os testes:
 ```
 
 ## Aprendizados
-
-O projeto apesar de estar configurado para java25 estava tentanto usar o 11, ocasionando erros,
-Em grandes projetos como esse, é importante ter varios readme, como aqui, e manter muita documentação.]
+Durante o desenvolvimento, aprendi como integrar recursos de inteligência artificial a uma aplicação real utilizando Spring AI, além de compreender melhor o uso de Tool Calling e a integração entre IA, regras de negócio e persistência de dados.
+Durante a configuração do ambiente, identifiquei que o Codespace estava utilizando o JDK 11, apesar de o projeto exigir Java 25. Isso exigiu a configuração correta do JDK no ambiente para permitir a execução da aplicação.
+Também aprendi a importância de manter uma documentação clara e organizada, especialmente em projetos que possuem diferentes módulos e tecnologias.
 
 
